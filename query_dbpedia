@@ -1,0 +1,10 @@
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT ?name,?lat,?long,?aliasLabel WHERE {
+?s a dbo:Place .
+?s rdfs:label ?name.
+?s geo:lat ?lat .
+?s geo:long ?long .
+?alias dbo:wikiPageRedirects ?s .
+?alias rdfs:label ?aliasLabel
+} 
