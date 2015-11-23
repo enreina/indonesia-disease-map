@@ -1,6 +1,8 @@
 import csv
 import json
 from polyglot.text import Text
+import string
+import re
 
 #read tweets and vectorize words
 keyword_penyakit = "ispa"
@@ -22,6 +24,7 @@ location_dictionary = json.load(open('location_dictionary.json'))
 
 def extract_location(text, use_polyglot = False):
 	if use_polyglot:
+		print text
 		text = Text(text)
 		text.language = 'id'
 		locations = [(" ".join(x)).encode('utf-8') for x in text.entities if x.tag == 'I-LOC']
@@ -30,6 +33,10 @@ def extract_location(text, use_polyglot = False):
 				print 'location: ' + loc
 				return (loc, location_dictionary[loc.lower()][0], location_dictionary[loc.lower()][1])
 	else:
+		text = re.sub(r"^\d+\s|\s\d+\s|\s\d+$", " ", text)
+		
+		for c in string.punctuation:
+			text = text.replace(c," ")
 		print text
 		tokens = text.split()
 		for token in tokens:
