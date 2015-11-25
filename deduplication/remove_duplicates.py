@@ -8,7 +8,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.cluster import DBSCAN
 
 #read tweets and vectorize words
-keyword_penyakit = "dbd"
+keyword_penyakit = "malaria"
 
 directory = '../dataset/' + keyword_penyakit + '/'
 
