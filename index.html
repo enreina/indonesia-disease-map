@@ -50,7 +50,7 @@
 
 <body>
 
-   <div class="folium-map" id="folium_283f6200bd38494cad09f173d88dc216" style="width: 100%; height: 100%"></div>
+   <div class="folium-map" id="folium_53edad9dff234f5f97ea54ed64e6d8d4" style="width: 100%; height: 100%"></div>
 
    <script>
 
@@ -94,7 +94,7 @@
       /*
       Creates the map and adds the selected layers
       */
-      var map = L.map('folium_283f6200bd38494cad09f173d88dc216', {
+      var map = L.map('folium_53edad9dff234f5f97ea54ed64e6d8d4', {
                                        center:[-2.7088628, 117.4906404],
                                        zoom: 5,
                                        maxBounds: bounds,
@@ -2019,6 +2019,51 @@
       marker_212.bindPopup("Jumlah Pasien ISPA Belum Signifikan di <b>Sawahlunto</b> - ANTARA Sumatera Barat: http://t.co/agTJQ61nEU");
       marker_212._popup.options.maxWidth = 300;
       clusteredmarkers.addLayer(marker_212)
+      
+      var marker_213_icon = L.AwesomeMarkers.icon({ icon: 'info-sign',markerColor: 'orange',prefix: 'glyphicon',extraClasses: 'fa-rotate-0'});
+      var marker_213 = L.marker([-4.76667, 
+                     137.8],
+                     {'icon':marker_213_icon}
+                     );
+      marker_213.bindPopup("Malaria Jadi Penyebab Utama Meninggalnya Personel TNI di <b>Papua</b> http://t.co/f8GONQx8Ls");
+      marker_213._popup.options.maxWidth = 300;
+      clusteredmarkers.addLayer(marker_213)
+      
+      var marker_214_icon = L.AwesomeMarkers.icon({ icon: 'info-sign',markerColor: 'orange',prefix: 'glyphicon',extraClasses: 'fa-rotate-0'});
+      var marker_214 = L.marker([-4.76667, 
+                     137.8],
+                     {'icon':marker_214_icon}
+                     );
+      marker_214.bindPopup("Banyak TNI di <b>Papua</b> tewas sebab malaria, prajurit wajib rutin makan - http://t.co/UccNb3Io3n http://t.co/VEReVDFFE2 #Keerom");
+      marker_214._popup.options.maxWidth = 300;
+      clusteredmarkers.addLayer(marker_214)
+      
+      var marker_215_icon = L.AwesomeMarkers.icon({ icon: 'info-sign',markerColor: 'orange',prefix: 'glyphicon',extraClasses: 'fa-rotate-0'});
+      var marker_215 = L.marker([-3.9, 
+                     102.4],
+                     {'icon':marker_215_icon}
+                     );
+      marker_215.bindPopup("Kota <b>Bengkulu</b> endemi tertinggi malaria dan DBD http://t.co/ul6zmbIe8K");
+      marker_215._popup.options.maxWidth = 300;
+      clusteredmarkers.addLayer(marker_215)
+      
+      var marker_216_icon = L.AwesomeMarkers.icon({ icon: 'info-sign',markerColor: 'orange',prefix: 'glyphicon',extraClasses: 'fa-rotate-0'});
+      var marker_216 = L.marker([-4.76667, 
+                     137.8],
+                     {'icon':marker_216_icon}
+                     );
+      marker_216.bindPopup("Malaria Hentikan Pengabdian Dokter Muda Ini di Tanah <b>Papua</b> #SelamatHariDokterNasional  https://t.co/JLOzrUiN9m https://t.co/rPbtLlTUxn");
+      marker_216._popup.options.maxWidth = 300;
+      clusteredmarkers.addLayer(marker_216)
+      
+      var marker_217_icon = L.AwesomeMarkers.icon({ icon: 'info-sign',markerColor: 'orange',prefix: 'glyphicon',extraClasses: 'fa-rotate-0'});
+      var marker_217 = L.marker([-6.1, 
+                     105.461],
+                     {'icon':marker_217_icon}
+                     );
+      marker_217.bindPopup("Bandar <b>Lampung</b> News - Politik &gt; Musim Hujan, DBD dan Malaria Ancam Warga Bandarlampung https://t.co/iUSkNEvsbD");
+      marker_217._popup.options.maxWidth = 300;
+      clusteredmarkers.addLayer(marker_217)
       
       //add the clustered markers to the group anyway
       map.addLayer(clusteredmarkers);
