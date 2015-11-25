@@ -1,9 +1,9 @@
 import csv
 import folium
 
-keywords_penyakit = ['dbd', 'diare', 'filariasis', 'ispa']
+keywords_penyakit = ['dbd', 'diare', 'filariasis', 'ispa', 'malaria']
 
-marker_color = {'dbd':'blue', 'diare':'green', 'filariasis':'red', 'ispa': 'purple'}
+marker_color = {'dbd':'blue', 'diare':'green', 'filariasis':'red', 'ispa': 'purple', 'malaria':'orange'}
 
 directory = '../dataset/'
 
