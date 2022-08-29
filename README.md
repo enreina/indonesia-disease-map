@@ -1,2 +1,2 @@
 # indonesia-disease-map
-Demo page: http://reyreina.github.io/indonesia-disease-map
+Demo page: https://enreina.com/indonesia-disease-map/
